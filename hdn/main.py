@@ -16,7 +16,7 @@ __version__ = "0.0.1"
 app = typer.Typer(
     rich_markup_mode="rich",
     no_args_is_help=True,
-    epilog="Made in [pale_turquoise1]✶✶✶✶[/pale_turquoise1][red1]Chicago[/red1][pale_turquoise1]✶✶✶✶[/pale_turquoise1]  〜 (c) 2023 Joe Doss",
+    epilog="Made in [pale_turquoise1]✶✶✶✶[/pale_turquoise1][red1]Chicago[/red1][pale_turquoise1]✶✶✶✶[/pale_turquoise1]  〜 (c) 2023 Joe Doss",  # noqa: E501
 )
 
 
@@ -136,7 +136,7 @@ def send(
     icon: Annotated[
         str,
         typer.Option(
-            help="Message Icon: See https://specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html for a full list",
+            help="Message Icon: See https://specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html for a full list",  # noqa: E501
             envvar="HDN_ICON",
         ),
     ] = "dialog-warning",
