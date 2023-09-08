@@ -1,0 +1,10 @@
+{
+  "summary": "Full example summary",
+  "body": "Full example body",
+  "urgency": "critical",
+  "object_path": "/org/freedesktop/Notifications",
+  "bus_name": "org.freedesktop.Notifications",
+  "interface": "org.freedesktop.Notifications",
+  "message_bus": "session",
+  "icon": "dialog-warning",
+  "expire": 20
