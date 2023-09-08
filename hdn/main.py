@@ -111,9 +111,7 @@ def send(
     ],
     body: Annotated[
         str,
-        typer.Option(
-            show_default=False, help="Body of the notification.", envvar="HDN_BODY"
-        ),
+        typer.Option(show_default=False, help="Body of the notification.", envvar="HDN_BODY"),
     ],
     urgency: Annotated[
         str,
@@ -204,9 +202,7 @@ def input_json(
         "summary": processed_json.get("summary"),
         "body": processed_json.get("body"),
         "urgency": processed_json.get("urgency", "normal"),
-        "object_path": processed_json.get(
-            "object_path", "/org/freedesktop/Notifications"
-        ),
+        "object_path": processed_json.get("object_path", "/org/freedesktop/Notifications"),
         "bus_name": processed_json.get("bus_name", "org.freedesktop.Notifications"),
         "interface": processed_json.get("interface", "org.freedesktop.Notifications"),
         "message_bus": processed_json.get("message_bus", "session"),
